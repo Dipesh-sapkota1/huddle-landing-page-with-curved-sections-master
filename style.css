@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+:root{
+--clr-pink: hsl(322, 100%, 66%);
+--clr-light-pink: hsl(321, 100%, 78%);
+--clr-light-red: hsl(0, 100%, 63%);
+--clr-very-dark-cyan: hsl(192, 100%, 9%);
+--clr-very-pale-blue: hsl(207, 100%, 98%);
+--clr-light-blue: hsl(210, 100%, 84%);
+
+--ff-body: 'Open Sans', sans-serif;
+--ff-headings: 'Poppins', sans-serif;
+--fw-400: 400;
+--fw-600: 600;
+--fw-700: 700;
+
+--max-width: 1100px;
+}
+body{
+    font-family: var(--ff-body);
+    color: var(--clr-very-dark-cyan);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--ff-headings);
+    font-weight: var(--fw-700);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+p{margin-bottom: 1rem;}
+a{color: #333;text-decoration: none;}
+ul{list-style: none;}
+input[type="email"]{border: none;}
+/* Utilities */
+.container{
+    padding: 0 30px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+.btn{
+    border: none;
+    padding: 0.6rem 2rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2rem;
+    font-weight: var(--fw-700);
+    margin-block: 1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--clr-pink);
+}
+.btn-cta{
+    padding: 0.1rem 1rem;
+    font-size: 0.8rem;
+    color: var(--clr-pink);
+    border: 1px solid var(--clr-pink);
+    border-radius: 1rem;
+}
+.btn-subscribe{border-radius: 0.3rem;}
+.btn-subscribe:hover ~ .input-group > .input-email{outline: 1px solid var(--clr-light-red);}
+.btn-subscribe:hover ~ .input-group > .label{visibility: visible;}
+.btn:hover{background: var(--clr-light-pink);}
+.btn-cta:hover{color: var(--clr-light-pink);border-color: var(--clr-light-pink);}
+.social a:hover{color: var(--clr-light-blue);}
+.label{color: var(--clr-light-red);visibility: hidden;}
+.shadow{box-shadow: 0 4px 4px rgba(187, 187, 187, 0.925);}
+.flex-reverse{flex-direction: row-reverse;}
+.py-4{padding: 4rem 0;}
+.py-5{padding: 5rem 0;}
+.py-6{padding: 6rem 0;}
+
+/* Hero */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+}
+.header-logo{
+    width: 7rem;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    text-align: center;
+    margin-block: 4rem;
+   
+}
+.hero-text h1{
+    font-size: 1.5rem;
+}
+.hero-image img{
+    object-fit: cover;
+}
+/* Status */
+.status-container{
+    padding: 0 2rem;
+}
+.status div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+.status-num {
+    font-size: 3rem;
+    font-weight: var(--fw-700);
+}
+.status-text{
+    color: #808080;
+}
+.status div img{
+    width: 1.5rem;
+    align-self: flex-start;
+}
+/* Features */
+ 
+.feature-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+.feature-group{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    padding:0 30px;
+    
+}
+.feature-group h2{
+    font-size: 1.2rem;
+}
+.feature-group img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.feature-group:first-child::before{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-section-top-mobile-1.svg') no-repeat center top;
+    background-size: contain;
+}
+.feature-group:first-child::after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-section-bottom-mobile-1.svg') no-repeat center bottom;
+    background-size: contain;
+}
+.feature-group:first-child{
+    background: var(--clr-very-pale-blue);
+    position: relative;
+    background-position:top 10% ;
+    padding: 100px 30px;
+    
+}
+ .feature-group:first-child *{z-index: 1000;}
+ /* last child */
+ .feature-group:last-child{
+    background: var(--clr-very-pale-blue);
+    position: relative;
+    background-position:top 10% ;
+    padding: 100px 30px;
+ }
+ .feature-group:last-child::before{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-section-top-mobile-2.svg') no-repeat center top;
+    background-size: contain;
+}
+.feature-group:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-section-bottom-mobile-2.svg') no-repeat center bottom;
+    background-size: contain;
+}
+/* CTA */
+.cta-content{
+    text-align: center;
+}
+.cta-content h2{
+    font-size: 1.5rem;
+}
+/* Footer */
+.main-footer{
+    background: var(--clr-very-dark-cyan);
+    color: #fff;
+    position: relative;
+}
+.bg-footer-mobile{
+    background: url(./images/bg-footer-top-mobile.svg) no-repeat center top/cover;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: -69px;
+}
+.bg-footer-mobile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.main-footer a{color: #fff;}
+ 
+.main-footer .footer-logo{
+    width: 13rem;
+}
+.main-footer h3{
+font-size: 1.3rem;
+font-family: var(--ff-body);
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.footer-grid{
+    display: grid;
+    gap: 5rem;
+} 
+.col-a{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.col-b{
+    grid-row: 1 / 2;
+}
+/* Newsletter */
+.subcription-form{
+    display: flex;
+    flex-direction: column-reverse;
+}
+ .input-group{
+    width: 100%;
+    font-size: 0.8rem;
+     
+}
+.input-email{
+    width: 100%;
+    height: 100%;
+    padding: 1rem; 
+    border-radius: 0.3rem;
+    display: block;
+}
+.btn-subscribe{
+    align-self: flex-end;
+    margin: 0;
+}
+/* col-a */
+.footer-banner p{
+    margin: 1rem 0;
+}
+.col-a p{
+    margin-block: 0.6rem;
+}
+.contact-info div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+}
+.contact-info{
+    margin-block: 3rem;
+}
