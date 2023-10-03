@@ -13,7 +13,7 @@
 <body>
   
  <header class="hero">
-  <nav class="container nav-bar">
+  <nav class=" nav-bar">
     <img src="./images/logo.svg" class="header-logo" alt="">
     <a href="#" class="btn-cta ">Try It Free</a>
   </nav>
@@ -46,90 +46,93 @@
       </div>
     </div>
     </div>
-    <section class="features py-4">
-      <div class=" feature-flex">
-        <div class="feature-group">
-          <div class="feature-content">
+    <section class="features py-3">
+      <div class=" feature-grid">
+        <div class="feature feature-a">
+          <img src="./images/bg-section-top-mobile-1.svg" alt="">
+          <div class="feature-content bg-light">
+           <div>
             <h2>Grow Together</h2>
-          <p> Generate meaningful discussions with your audience and build a strong, loyal community. 
+            <p> Generate meaningful discussions with your audience and build a strong, loyal community. 
             Think of the insightful conversations you miss out on with a feedback form. </p>
-          </div>
-          <div class="feature-img">
+           </div>
             <img src="./images/illustration-grow-together.svg" alt="">
           </div>
+          <img src="./images/bg-section-bottom-mobile-1.svg" alt="">
     </div>
-      <div class="feature-group row-reverse">
+      <div class=" feature feature-b ">
         <div class="feature-content">
-        <h2>Flowing Conversations</h2>
-        <p>  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-          just-in-time loading for a more natural flow.</p>
-        </div>
-        <div class="feature-img">
+          <div>
+            <h2>Flowing Conversations</h2>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.</p>
+          </div>
           <img src="./images/illustration-flowing-conversation.svg" alt="">
         </div>
       </div>
-      <div class="feature-group">
-        <div class="feature-content">
+      <div class=" feature feature-c">
+        <img src="./images/bg-section-top-mobile-2.svg" alt="">
+        <div class="feature-content bg-light">
+        <div>
           <h2>Your Users</h2>
           <p> It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
             once signed in to your app, your users can start chatting immediately.</p>
-          </div>
-          <div class="feature-img">
-            <img src="./images/illustration-your-users.svg" alt="">
-          </div>
+         </div>
+          <img src="./images/illustration-your-users.svg" alt="">
+        </div> 
+        <img src="./images/bg-section-bottom-mobile-2.svg" alt="">
       </div>
     </div>
   </section>
-  <section class="cta py-4">
+  <section class="cta">
     <div class="container cta-content">
       <h2>Ready To Build Your Community?</h2>
-      <a href="#" class="btn shadow">Get Started For Free</a>
+      <a href="#" class="btn btn-2 shadow">Get Started For Free</a>
     </div>
   </section>
 </main>
  
-<footer class="main-footer py-5">
-  <div class="bg-footer-mobile">
-   
+<footer>
+  <img src="./images/bg-footer-top-mobile.svg" alt="">
+  <div class="bg-dark py-4">
+    <div class="container footer-container">
+      <div class="col-a">
+        <div class="footer-banner">
+          <img src="./images/footer-logo.svg" alt="" class="footer-logo">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit laciniavestibulum a, ultrices quis sem.</p>
+        </div>
+        <div class="contact-info">
+          <div>
+            <img src="./images/icon-phone.svg" alt="">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div>
+            <img src="./images/icon-email.svg" alt="">
+            <p>example@huddle.com</p>
+          </div>
+        </div>
+        <div class="social">
+          <a href="http://facebook.com"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+          <a href="http://instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="http://twitter.com"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+        </div>
+      </div>
+      <div class="col-b">
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+            send you spam or pass on your email address</p>
+        </div>
+        <form action="post" class="subscription-form">
+          <input onmouseover="Fill_Placeholder()" onmouseout="Empty_Placeholder()" type="submit" value="subscribe"  id="btn-subscribe" class="btn btn-subscribe" > 
+          <div class="input-group">
+            <input type="email" name="email"  id="email-input" class="input-email"   value="" placeholder="email@example.com">
+            <span class="label">check your email please</span>
+          </div>
+        </form>
+      </div>
+    </div>
 </div>
-  <div class="footer-grid container">
-    <div class="col-a">
-      <div class="footer-banner">
-        <img src="./images/footer-logo.svg" alt="" class="footer-logo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit laciniavestibulum a, ultrices quis sem.</p>
-      </div>
-      <div class="contact-info">
-        <div>
-          <img src="./images/icon-phone.svg" alt="">
-          <p>Phone: +1-543-123-4567</p>
-        </div>
-        <div>
-          <img src="./images/icon-email.svg" alt="">
-          <p>example@huddle.com</p>
-        </div>
-      </div>
-      <div class="social">
-        <a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-      </div>
-    </div>
-    <div class="col-b">
-      <div class="newsletter">
-        <h3>Newsletter</h3>
-        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-          send you spam or pass on your email address</p>
-      </div>
-      <form action="post" class="subcription-form">
-        <input onmouseover="Fill_Placeholder()" onmouseout="Empty_Placeholder()" type="submit" value="subscribe"  id="btn-subscribe" class="btn btn-subscribe" > 
-        <div class="input-group">
-          <input type="email" name="email"  id="email-input" class="input-email"   value="" placeholder="email@example.com">
-          <span class="label">check your email please</span>
-        </div>
-      </form>
-    </div>
-  
-  </div>
 </footer>
 <script src="./js/main.js"></script>
 </body>
