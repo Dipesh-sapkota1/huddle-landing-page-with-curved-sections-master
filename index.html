@@ -49,38 +49,56 @@
     <section class="features py-3">
       <div class=" feature-grid">
         <div class="feature feature-a">
-          <img src="./images/bg-section-top-mobile-1.svg" alt="">
+        <picture>
+          <source media="(min-width:380px)" srcset="./images/bg-section-top-desktop-1.svg">
+          <img src="./images/bg-section-top-mobile-1.svg" alt="top-mobile">
+        </picture>
           <div class="feature-content bg-light">
-           <div>
+           <div class="feature-text">
             <h2>Grow Together</h2>
             <p> Generate meaningful discussions with your audience and build a strong, loyal community. 
             Think of the insightful conversations you miss out on with a feedback form. </p>
            </div>
+           <div class="feature-image">
             <img src="./images/illustration-grow-together.svg" alt="">
           </div>
-          <img src="./images/bg-section-bottom-mobile-1.svg" alt="">
+          </div>
+          <picture>
+            <source media="(min-width:380px)" srcset="./images/bg-section-bottom-desktop-1.svg">
+            <img src="./images/bg-section-bottom-mobile-1.svg" alt="bottom-mobile">
+          </picture>
     </div>
       <div class=" feature feature-b ">
-        <div class="feature-content">
-          <div>
+        <div class="feature-content flex-reverse">
+          <div class="feature-text">
             <h2>Flowing Conversations</h2>
             <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
             just-in-time loading for a more natural flow.</p>
           </div>
-          <img src="./images/illustration-flowing-conversation.svg" alt="">
+          <div class="feature-image">
+            <img src="./images/illustration-flowing-conversation.svg" alt="">
+          </div>
         </div>
       </div>
       <div class=" feature feature-c">
-        <img src="./images/bg-section-top-mobile-2.svg" alt="">
+        <picture>
+          <source media="(min-width:380px)" srcset="./images/bg-section-top-desktop-2.svg">
+          <img src="./images/bg-section-top-mobile-2.svg" alt="bottom-mobile">
+        </picture>
         <div class="feature-content bg-light">
-        <div>
+        <div class="feature-text">
           <h2>Your Users</h2>
           <p> It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
             once signed in to your app, your users can start chatting immediately.</p>
          </div>
+         <div class="feature-image">
           <img src="./images/illustration-your-users.svg" alt="">
+        </div>
         </div> 
-        <img src="./images/bg-section-bottom-mobile-2.svg" alt="">
+        <picture>
+          <source media="(min-width:380px)" srcset="./images/bg-section-bottom-desktop-2.svg">
+          <img src="./images/bg-section-bottom-mobile-2.svg" alt="bottom-mobile">
+        </picture>
       </div>
     </div>
   </section>
@@ -93,7 +111,10 @@
 </main>
  
 <footer>
-  <img src="./images/bg-footer-top-mobile.svg" alt="">
+   <picture>
+            <source media="(min-width:380px)" srcset="./images/bg-footer-top-desktop.svg">
+            <img src="./images/bg-footer-top-mobile.svg" alt="bottom-mobile">
+          </picture>
   <div class="bg-dark py-4">
     <div class="container footer-container">
       <div class="col-a">

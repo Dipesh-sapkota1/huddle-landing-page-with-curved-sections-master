@@ -133,7 +133,8 @@ input[type="email"]{border: none;}
     gap: 15rem;
 }
 .feature-content{
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
     gap: 4rem;
@@ -143,9 +144,7 @@ input[type="email"]{border: none;}
     font-size: 1.2rem;
 }
 .feature-content img{
-    grid-row: 1 /2;
     width: 90%;
-    justify-self: center;
 }
 /* cta */
 .cta{
@@ -201,6 +200,63 @@ footer, footer a{color: #fff;}
 .social{
     display: flex;
     gap: 1rem;
-    margin-block: 2rem;
+    margin-block: 2.5rem;
     
+}
+@media(min-width:800px){
+    .btn-cta{padding: 0.3rem 1.5rem;}
+    .nav-bar{height: 6rem;padding: 0 2.5rem;}
+    .header-logo{width: 10rem;}
+    .hero-text h1{font-size: 2.5rem;}
+    .hero-text p{width: 50%;margin: 1.5rem auto;}
+    .btn{padding: 1rem 4rem;font-size: 1rem;}
+    .hero-image img{width: 80%;}
+
+    .status-container{grid-template-rows: 1fr;grid-template-columns: 1fr 1fr; justify-items: center;}
+    .status-container div:last-child{grid-row-start: 1; grid-column: 2;}
+    .status-container div{width: max-content;}
+   
+    .feature-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+      }
+    .feature-text {
+        flex: 1;
+        text-align: left;
+      }
+    .feature-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .feature-image img {
+        max-width: 100%;  
+        height: auto;  
+        }
+    .feature-content .feature-text > h2{font-size: 2rem;}
+    .flex-reverse{flex-direction: row-reverse;}
+
+    .footer-container{grid-template-columns: repeat(3,1fr);}
+    .col-b{
+        grid-row: 1;
+        grid-column: 2 /span 2;
+        display: flex;
+        flex-direction: column;
+        }
+     .newsletter{
+        width: 50%;
+        align-self: center;
+        margin-right: 4.5rem;
+        }
+    .subscription-form{
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+    .btn-subscribe{align-self: flex-start;}
+             
+
 }
